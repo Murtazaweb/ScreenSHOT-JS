@@ -36,7 +36,7 @@ $(document).ready(function(){
        
         $.ajax({
             type: 'post',
-            url: 'http://159.89.206.41/addurl', 
+            url: 'http://159.89.206.41:3000/addurl', 
             data: data1
         })
         .done(function(data){
