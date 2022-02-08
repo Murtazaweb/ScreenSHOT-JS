@@ -1,7 +1,7 @@
 let receiver = "",
     sender = "";
-const host = "http://localhost:3000";
-// https://chatting-webapp.herokuapp.com/ 
+const host = "http://159.89.206.41:3000";
+
 //    on document load
 $(() => {
     let temp = (document.cookie.split('username')[1] != undefined ? document.cookie.split('username')[1].split('=')[1] : '');
