@@ -12,7 +12,7 @@ $("#btnSubmit").submit(function(e) {
                 // disabled the submit button
                 //$("#btnSubmit").prop("disabled", true);
     $.ajax({
-        url: "http://localhost:3000/addurl",
+        url: "http://159.89.206.41/addurl",
         type: "POST",
         data: data,
         success: function(data){
