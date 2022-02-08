@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon  -->
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlUroHbwlxtTmY8Kwb7yaHn2pHi4F3GsD7g&usqp=CAU">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title><%- title %></title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"> Web Portal</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/"> Home</a></li>
+                <li></li>
+                <li><a href="#"><span class="auth"> Page</span></a></li>
+                <li><a href="/dashboard"><span class="auth"> dashboard</span></a></li>
+                <li><a href="/showurl"><span class="auth"> lists Websites</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right unauth">
+                <li><a href="/signup"><span class="glyphicon glyphicon-user"> </span> Sign Up</a></li>
+                <li><a href="/signin"><span class="glyphicon glyphicon-log-in"> </span> Login</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right auth" style="display: none;">
+                <li><a href="" style="color: aqua;">Logged in as <span class="auth-user"></span></a></li>
+                <li><a href="/user/logout"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container notification"></div>
+
+    <%- body %>
+    <br>
+    <!-- General scriptss -->
+    <script src="./js/scripts.js"></script>
+    <script src="./js/ajax.js"></script>
+    <!-- Chat Module scripts -->
+    <script src="./js/messageScript.js"></script>
+    <!-- User Module Scripts -->
+    <script src="./js/userScripts.js"></script>
+    
+</body>
+
+</html>

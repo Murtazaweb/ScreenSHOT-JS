@@ -1,0 +1,49 @@
+<div class="container">
+    <!-- onsubmit="return register();" -->
+    <!-- <form  action="/user/register" method="POST"> -->
+        <h1 class="text-center text-primary">Sign Up</h1>
+        <p class="text-center text-muted">Please fill in this form to create an account.</p>
+        <hr>
+        <!-- Username Block -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="username" class="control-label"><b>Username</b></label>
+                </div>
+                <div class="col-sm-10 ">
+                    <input type="text" class="form-control" placeholder="Enter Username" id="username" name="username" required
+                        autofocus autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Block -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="password" class="control-label"><b>Password</b></label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" placeholder="Enter Password" id="password" name="password" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat Password Block -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="password-repeat" class="control-label"><b>Repeat Password</b></label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" placeholder="Repeat Password" name="repeatPassword" id="repeat-password"
+                        required>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <button id="signupBtn"  class="btn btn-primary btn-block">Sign Up</button>
+        </div>
+    <!-- </form> -->
+</div>
