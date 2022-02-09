@@ -8,7 +8,8 @@ from urllib.parse import urlparse
 
 options = webdriver.ChromeOptions()
 options.headless = True
-driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+#driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+driver = webdriver.Chrome(options=options)
 driver.implicitly_wait(10)
 
 
