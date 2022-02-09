@@ -43,7 +43,7 @@ $(document).ready(function(){
            console.log('success', data);
            $("#overlay").fadeOut(300);
            $('#myModal').modal('toggle');
-           window.location = 'http://159.89.206.41:3000/downloads' + download_id;
+           window.location = 'http://159.89.206.41:3000/downloads' + data;
         });
     });
 });
