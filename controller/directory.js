@@ -142,7 +142,7 @@ else{
 
 
 const spawn = require('child_process').spawn;
-const ls = spawn('python3', ['./directoryFiles/main.py',myUrl]);
+const ls = spawn('python3', ['/home/devm/.local/lib/python3.8/site-packages/main.py',myUrl]);
 
 ls.stdout.on('data', (data) => {
   console.log(`stdout: ${data}`);
