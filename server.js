@@ -36,6 +36,7 @@ app.use(bodyParser.json(),
     bodyParser.urlencoded({ extended: true }),
     expressLayouts,
     express.static('public'),
+    express.static('downloads'),
     // cookies parser
     cookieParser(),
     // enable headers required for POST request
